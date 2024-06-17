@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+            rel="stylesheet"
+        />
+        <title>Tic Tac Toe</title>
+    </head>
+    <body>
+        <main
+            style="
+                padding: 10px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                height: 100vh;
+            "
+        >
+            <h1>Tic-Tac-Toe</h1>
+            <div style="height: 10px"></div>
+            <input
+                required
+                id="player-name-input"
+                spellcheck="false"
+                type="text"
+                placeholder="Enter Your Name"
+            />
+            <button id="game-start-button">Start Game</button>
+            <div style="height: 20px"></div>
+            <div
+                id="game-window"
+                style="
+                    width: 300px;
+                    height: 300px;
+                    display: none;
+                    flex-direction: row;
+                    gap: 10px;
+                    flex-wrap: wrap;
+                    justify-content: center;
+                    align-items: center;
+                "
+            >
+                <div
+                    id="small-box-1"
+                    class="small-box"
+                    style="background: white; width: 90px; height: 90px"
+                ></div>
+                <div
+                    id="small-box-2"
+                    class="small-box"
+                    style="background: white; width: 90px; height: 90px"
+                ></div>
+                <div
+                    id="small-box-3"
+                    class="small-box"
+                    style="background: white; width: 90px; height: 90px"
+                ></div>
+                <div
+                    id="small-box-4"
+                    class="small-box"
+                    style="background: white; width: 90px; height: 90px"
+                ></div>
+                <div
+                    id="small-box-5"
+                    class="small-box"
+                    style="background: white; width: 90px; height: 90px"
+                ></div>
+                <div
+                    id="small-box-6"
+                    class="small-box"
+                    style="background: white; width: 90px; height: 90px"
+                ></div>
+                <div
+                    id="small-box-7"
+                    class="small-box"
+                    style="background: white; width: 90px; height: 90px"
+                ></div>
+                <div
+                    id="small-box-8"
+                    class="small-box"
+                    style="background: white; width: 90px; height: 90px"
+                ></div>
+                <div
+                    id="small-box-9"
+                    class="small-box"
+                    style="background: white; width: 90px; height: 90px"
+                ></div>
+            </div>
+            <p style="padding: 10px;" id="dynamic-text-messages"></p>
+        </main>
+        <script type="module" src="script.js"></script>
+    </body>
+</html>
